@@ -26,6 +26,12 @@ public class HomeController {
     @Autowired
     private DiscussPostService discussPostService;
 
+    /**
+     * 访问首页
+     * @param model
+     * @param page
+     * @return
+     */
     @RequestMapping(path = "/index", method = RequestMethod.GET)
     public String getIndexPage(Model model, Page page){
 
